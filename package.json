@@ -1,0 +1,25 @@
+{
+  "name": "newsletter-sign-up-form-with-success-message",
+  "version": "1.0.0",
+  "description": "![Design preview for the Newsletter sign-up form with success message coding challenge](./preview.jpg)",
+  "main": "index.js",
+ "scripts": {
+  "watch": "sass --watch src/styles/style.scss:style.css"
+},
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxi1993-tech/newsletter-sign-up-form-with-success-message.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/maxi1993-tech/newsletter-sign-up-form-with-success-message/issues"
+  },
+  "homepage": "https://github.com/maxi1993-tech/newsletter-sign-up-form-with-success-message#readme",
+  "devDependencies": {
+    "sass": "^1.99.0"
+  }
+}
