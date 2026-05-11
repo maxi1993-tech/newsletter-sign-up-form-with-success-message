@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <meta name="description" content="Newsletter sign-up form with success message — Frontend Mentor challenge">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
 </head>
+
 <body>
 
-  <!-- Sign-up form start -->
+  <main>
 
-  Stay updated!
+    <!-- Sign-up form start -->
+    <div class="ctnr-sign-up">
 
-  Join 60,000+ product managers receiving monthly updates on:
+      <picture>
+        <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 1440px)">
+        <source srcset="./assets/images/illustration-sign-up-tablet.svg" media="(min-width: 768px)">
+        <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(min-width: 375px)">
+        <img class="illustration" src="./assets/images/illustration-sign-up-mobile.svg" alt="" width="375" height="284">
+      </picture>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+      <h1 class="title-primary">Stay updated!</h1>
+      <p class="paragraph-primary">Join 60,000+ product managers receiving monthly updates on:</p>
 
-  Email address
-  email@company.com
+      <ul class="lists">
+        <li class="list">Product discovery and building what matters</li>
+        <li class="list">Measuring to ensure updates are a success</li>
+        <li class="list">And much more!</li>
+      </ul>
 
-  Subscribe to monthly newsletter
+      <form class="sign-up-form" action="#" method="post">
 
-  <!-- Sign-up form end -->
+        <label class="form-label" for="email">Email address</label>
+        <input class="for-input" type="email" name="email" id="email" required placeholder="email@company.com"
+          aria-describedby="email-error">
+        <span id="email-error" aria-live="polite"></span>
+        <button class="sign-up-button" type="submit">Subscribe to monthly newsletter</button>
 
-  <!-- Success message start -->
+      </form>
 
-  Thanks for subscribing!
+    </div>
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
+    <!-- Success message start -->
+    <div class="ctnr-success" aria-hidden="true">
 
-  Dismiss message
+      <img class="svg-success" src="./assets/images/icon-success.svg" alt="">
+      <h2 class="title-success">Thanks for subscribing!</h2>
+      <p class="paragraph-success">A confirmation email has been sent to <span>ash@loremcompany.com</span>.
+        Please open it and click the button inside to confirm your subscription.</p>
 
-  <!-- Success message end -->
-  
+      <button class="success-button" type="button">Dismiss message</button>
+
+    </div>
+
+  </main>
+
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Maxime Chapelle</a>.
   </footer>
 </body>
+
 </html>
