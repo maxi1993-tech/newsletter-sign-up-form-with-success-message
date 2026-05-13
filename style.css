@@ -56,8 +56,10 @@
 }
 
 body {
+  color: var(--color-blue-800);
   font-family: "Roboto", sans-serif;
   letter-spacing: 0;
+  line-height: var(--lh-base);
 }
 
 img,
@@ -94,9 +96,83 @@ select {
 }
 
 .ctnr-sign-up {
+  min-height: 52.625rem;
+  background-color: var(--color-white);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-500);
+  align-items: center;
+}
+
+.container-main {
+  max-width: 20.4375rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-500);
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+.sign-up-form .form-label {
+  font-size: var(--fs-preset-3);
+  font-weight: var(--fw-bold);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+}
+.sign-up-form .form-label .form-input {
+  font-size: var(--fs-preset-2);
+  font-weight: var(--fw-regular);
+  padding: var(--spacing-200);
+  border-radius: var(--radius-email);
+  border: 1px solid var(--color-grey);
+}
+.sign-up-form #email-error {
+  display: none;
+}
+.sign-up-form .sign-up-button {
+  background-color: var(--color-blue-800);
+  color: var(--color-white);
+  font-size: var(--fs-preset-2);
+  font-weight: var(--fw-bold);
+  padding: var(--spacing-200);
+  border-radius: var(--radius-email);
+  border: none;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+.container-content .container-title {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+.container-content .container-title h1 {
+  font-size: var(--fs-preset-1);
+  line-height: var(--lh-preset-1);
+  font-weight: var(--fw-bold);
+}
+.container-content .container-title .paragraph-primary {
+  font-size: var(--fs-preset-2);
+  font-weight: var(--fw-regular);
+}
+.container-content .lists {
+  font-size: var(--fs-preset-2);
+  font-weight: var(--fw-regular);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+}
+.container-content .lists .list {
+  display: flex;
+  gap: var(--spacing-200);
 }
 
 .ctnr-success {
