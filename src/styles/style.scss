@@ -104,7 +104,7 @@ select {
     font: inherit;
 }
 
-.ctnr-sign-up {
+.container-sign-up {
     min-height: 52.625rem;
     background-color: var(--color-white);
     display: flex;
@@ -193,16 +193,8 @@ select {
     }
 }
 
-.ctnr-success {
+.container-success {
     display: none;
-}
-
-@media (min-width: 768px) {
-    /* bp-tablet */
-}
-
-@media (min-width: 1440px) {
-    /* bp-desktop */
 }
 
 .attribution {
@@ -213,3 +205,12 @@ select {
         color: var(--color-footer);
     }
 }
+
+@media (min-width: 768px) {
+    /* bp-tablet */
+}
+
+@media (min-width: 1440px) {
+    /* bp-desktop */
+}
+

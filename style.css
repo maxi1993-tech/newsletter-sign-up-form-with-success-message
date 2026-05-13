@@ -95,7 +95,7 @@ select {
   font: inherit;
 }
 
-.ctnr-sign-up {
+.container-sign-up {
   min-height: 52.625rem;
   background-color: var(--color-white);
   display: flex;
@@ -175,8 +175,16 @@ select {
   gap: var(--spacing-200);
 }
 
-.ctnr-success {
+.container-success {
   display: none;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--color-footer);
 }
 
 @media (min-width: 768px) {
@@ -184,13 +192,6 @@ select {
 }
 @media (min-width: 1440px) {
   /* bp-desktop */
-}
-.attribution {
-  font-size: 0.6875rem;
-  text-align: center;
-}
-.attribution a {
-  color: var(--color-footer);
 }
 
 /*# sourceMappingURL=style.css.map */
