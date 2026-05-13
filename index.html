@@ -17,32 +17,34 @@
 
     <!-- Sign-up form start -->
     <div class="ctnr-sign-up">
+      
+        <picture>
+          <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 1440px)">
+          <source srcset="./assets/images/illustration-sign-up-tablet.svg" media="(min-width: 768px)">
+          <img class="illustration" src="./assets/images/illustration-sign-up-mobile.svg" alt="" width="375"
+            height="284">
+        </picture>
+        <div class="container-content">
+          <div class="container-title">
+            <h1 class="title-primary">Stay updated!</h1>
+            <p class="paragraph-primary">Join 60,000+ product managers receiving monthly updates on:</p>
+          </div>
+          <ul class="lists">
+            <li class="list">Product discovery and building what matters</li>
+            <li class="list">Measuring to ensure updates are a success</li>
+            <li class="list">And much more!</li>
+          </ul>
+        </div>
+        <form class="sign-up-form" action="#" method="post">
 
-      <picture>
-        <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 1440px)">
-        <source srcset="./assets/images/illustration-sign-up-tablet.svg" media="(min-width: 768px)">
-        <img class="illustration" src="./assets/images/illustration-sign-up-mobile.svg" alt="" width="375" height="284">
-      </picture>
+          <label class="form-label" for="email">Email address</label>
+          <input class="form-input" type="email" autocomplete="email" name="email" id="email" required placeholder="email@company.com"
+            aria-describedby="email-error">
+          <span id="email-error" aria-live="polite"></span>
+          <button class="sign-up-button" type="submit">Subscribe to monthly newsletter</button>
 
-      <h1 class="title-primary">Stay updated!</h1>
-      <p class="paragraph-primary">Join 60,000+ product managers receiving monthly updates on:</p>
-
-      <ul class="lists">
-        <li class="list">Product discovery and building what matters</li>
-        <li class="list">Measuring to ensure updates are a success</li>
-        <li class="list">And much more!</li>
-      </ul>
-
-      <form class="sign-up-form" action="#" method="post">
-
-        <label class="form-label" for="email">Email address</label>
-        <input class="form-input" type="email" name="email" id="email" required placeholder="email@company.com"
-          aria-describedby="email-error">
-        <span id="email-error" aria-live="polite"></span>
-        <button class="sign-up-button" type="submit">Subscribe to monthly newsletter</button>
-
-      </form>
-
+        </form>
+      
     </div>
 
     <!-- Success message start -->
