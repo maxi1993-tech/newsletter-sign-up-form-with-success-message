@@ -27,6 +27,7 @@
   --spacing-800: 4rem;
   --spacing-900: 4.5rem;
   --spacing-1300: 6.5rem;
+  --spacing-1800: 9rem;
   /* radius */
   --radius-img-mobile: 0px 0px 16px 16px;
   --radius-img-tablet: 16px;
@@ -38,7 +39,7 @@
   --padding-card-tablet: 2.5rem;
   --padding-card-desktop: 2rem;
   /* typography */
-  --fs-preset-1: clamp(40px, 4vw, 56px);
+  --fs-preset-1: clamp(40px, 7.30vw, 56px);
   --lh-preset-1: 1;
   --fs-preset-2: 1rem;
   --lh-base: 1.5;
@@ -106,7 +107,7 @@ main {
 .container-sign-up {
   min-height: 52.625rem;
   background-color: var(--color-white);
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: var(--spacing-500);
   align-items: center;
@@ -186,7 +187,7 @@ main {
 .container-success {
   max-width: 20.4375rem;
   min-height: 38.9375rem;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -227,6 +228,26 @@ main {
 
 @media (min-width: 768px) {
   /* bp-tablet */
+  main {
+    background-color: var(--color-blue-700);
+  }
+  .container-sign-up {
+    max-width: 38rem;
+    width: 100%;
+    min-height: 54.875rem;
+    border-radius: var(--radius-img-tablet);
+    padding: var(--padding-card-tablet);
+  }
+  .container-main {
+    max-width: unset;
+    gap: var(--spacing-300);
+  }
+  .container-main .sign-up-form .form-input {
+    padding: var(--spacing-200) var(--spacing-1800);
+  }
+  .container-main .sign-up-form .sign-up-button {
+    padding: var(--spacing-200) var(--spacing-1800);
+  }
 }
 @media (min-width: 1440px) {
   /* bp-desktop */
