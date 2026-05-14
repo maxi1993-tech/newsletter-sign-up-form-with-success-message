@@ -113,6 +113,7 @@ main {
     align-items: center;
 }
 
+/* Sign-up form start */
 .container-sign-up {
     min-height: 52.625rem;
     background-color: var(--color-white);
@@ -202,6 +203,7 @@ main {
     }
 }
 
+/* Success message start */
 .container-success {
     max-width: 20.4375rem;
     min-height: 38.9375rem;
@@ -257,12 +259,14 @@ main {
         background-color: var(--color-blue-700);
     }
 
+    /* Sign-up form start */
     .container-sign-up {
         max-width: 38rem;
         width: 100%;
         min-height: 54.875rem;
         border-radius: var(--radius-img-tablet);
         padding: var(--padding-card-tablet);
+        display: none;
     }
 
     .container-main {
@@ -279,6 +283,16 @@ main {
                 padding: var(--spacing-200) var(--spacing-1800);
             }
         }
+    }
+
+    /* Success message start */
+    .container-success {
+        display: flex;
+        max-width: 31.5rem;
+        min-height: 32.5rem;
+        background-color: var(--color-white);
+        padding: var(--spacing-800);
+        border-radius: var(--radius-card-tablet);
     }
 }
 
