@@ -104,10 +104,18 @@ select {
     font: inherit;
 }
 
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container-sign-up {
     min-height: 52.625rem;
     background-color: var(--color-white);
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: var(--spacing-500);
     align-items: center;
@@ -167,7 +175,7 @@ select {
         flex-direction: column;
         gap: var(--spacing-300);
 
-        h1 {
+        .title-primary {
             font-size: var(--fs-preset-1);
             line-height: var(--lh-preset-1);
             font-weight: var(--fw-bold);
@@ -194,7 +202,42 @@ select {
 }
 
 .container-success {
-    display: none;
+    max-width: 20.4375rem;
+    min-height: 38.9375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .container-success-content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-400);
+
+        .svg-success {
+            width: 4rem;
+            height: 4rem;
+        }
+
+        .title-success {
+            font-size: var(--fs-preset-1);
+            line-height: var(--lh-preset-1);
+            font-weight: var(--fw-bold);
+        }
+
+        .email-bold {
+            font-weight: var(--fw-bold);
+        }
+    }
+
+    .success-button {
+        background-color: var(--color-blue-800);
+        color: var(--color-white);
+        font-size: var(--fs-preset-2);
+        font-weight: var(--fw-bold);
+        padding: var(--spacing-200);
+        border-radius: var(--radius-email);
+        border: none;
+    }
 }
 
 .attribution {
@@ -213,4 +256,3 @@ select {
 @media (min-width: 1440px) {
     /* bp-desktop */
 }
-
