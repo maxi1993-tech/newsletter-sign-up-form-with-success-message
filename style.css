@@ -240,7 +240,7 @@ main {
     min-height: 54.875rem;
     border-radius: var(--radius-img-tablet);
     padding: var(--padding-card-tablet);
-    display: none;
+    display: flex;
   }
   .container-main {
     max-width: unset;
@@ -254,7 +254,7 @@ main {
   }
   /* Success message start */
   .container-success {
-    display: flex;
+    display: none;
     max-width: 31.5rem;
     min-height: 32.5rem;
     background-color: var(--color-white);
@@ -265,6 +265,29 @@ main {
 }
 @media (min-width: 1440px) {
   /* bp-desktop */
+  /* Sign-up form start */
+  .container-sign-up {
+    max-width: unset;
+    min-height: unset;
+    width: unset;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: var(--spacing-800);
+  }
+  .container-sign-up picture {
+    grid-column: 2/3;
+  }
+  .container-main {
+    min-height: 28.125rem;
+    grid-row: 1/2;
+  }
+  .container-main .sign-up-form .form-input {
+    padding: var(--spacing-200) var(--spacing-900);
+  }
+  .container-main .sign-up-form .sign-up-button {
+    padding: var(--spacing-200) var(--spacing-900);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
