@@ -271,7 +271,7 @@ main {
     min-height: 41.0625rem;
     padding: var(--padding-card-desktop);
     width: unset;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     gap: var(--spacing-800);
@@ -300,6 +300,11 @@ main {
   }
   .container-content .container-title {
     gap: var(--spacing-400);
+  }
+  /* Success message start */
+  .container-success {
+    display: flex;
+    gap: 0;
   }
 }
 
