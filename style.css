@@ -12,6 +12,7 @@
   /* colors */
   --color-gradient: linear-gradient(90deg, #FF6A3A 0%, #FF527B 100%);
   --color-red: hsl(4, 100%, 67%);
+  --color-red-100: hsl(2, 100%, 95%, 100%);
   --color-blue-700: hsl(235, 18%, 26%);
   --color-blue-800: hsl(234, 29%, 20%);
   --color-grey: hsl(0, 0%, 58%);
@@ -141,6 +142,15 @@ main {
   border-radius: var(--radius-email);
   border: 1px solid var(--color-grey);
 }
+.sign-up-form .form-label .form-input--error {
+  background-color: var(--color-red-100);
+  color: var(--color-red);
+  border: 1px solid var(--color-red);
+}
+.sign-up-form .form-label .form-input--error + #email-error {
+  color: var(--color-red);
+  display: block;
+}
 .sign-up-form #email-error {
   display: none;
 }
@@ -152,6 +162,16 @@ main {
   padding: var(--spacing-200);
   border-radius: var(--radius-email);
   border: none;
+  cursor: pointer;
+}
+.sign-up-form .sign-up-button:hover {
+  background: var(--color-gradient);
+}
+.sign-up-form .sign-up-button:focus {
+  box-shadow: 0 0 0 3px var(--color-red);
+}
+.sign-up-form .sign-up-button:active {
+  background: var(--color-gradient);
 }
 
 .container-content {
@@ -218,6 +238,16 @@ main {
   padding: var(--spacing-200);
   border-radius: var(--radius-email);
   border: none;
+  cursor: pointer;
+}
+.container-success .success-button:hover {
+  background: var(--color-gradient);
+}
+.container-success .success-button:focus {
+  box-shadow: 0 0 0 3px var(--color-red);
+}
+.container-success .success-button:active {
+  background: var(--color-gradient);
 }
 
 .attribution {
@@ -271,7 +301,7 @@ main {
     min-height: 41.0625rem;
     padding: var(--padding-card-desktop);
     width: unset;
-    display: none;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     gap: var(--spacing-800);
@@ -303,7 +333,7 @@ main {
   }
   /* Success message start */
   .container-success {
-    display: flex;
+    display: none;
     gap: 0;
   }
 }

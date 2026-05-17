@@ -17,6 +17,7 @@ $bp-desktop: 1440px;
     /* colors */
     --color-gradient: linear-gradient(90deg, #FF6A3A 0%, #FF527B 100%);
     --color-red: hsl(4, 100%, 67%);
+    --color-red-100: hsl(2, 100%, 95%, 100%);
     --color-blue-700: hsl(235, 18%, 26%);
     --color-blue-800: hsl(234, 29%, 20%);
     --color-grey: hsl(0, 0%, 58%);
@@ -150,6 +151,17 @@ main {
             border-radius: var(--radius-email);
             border: 1px solid var(--color-grey);
         }
+
+        .form-input--error {
+            background-color: var(--color-red-100);
+            color: var(--color-red);
+            border: 1px solid var(--color-red);
+        }
+
+        .form-input--error + #email-error {
+            color: var(--color-red);
+            display: block;
+        }
     }
 
     #email-error {
@@ -164,6 +176,19 @@ main {
         padding: var(--spacing-200);
         border-radius: var(--radius-email);
         border: none;
+        cursor: pointer;
+
+        &:hover {
+            background: var(--color-gradient);
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 3px var(--color-red);
+        }
+
+        &:active {
+            background: var(--color-gradient);
+        }
     }
 }
 
@@ -240,6 +265,19 @@ main {
         padding: var(--spacing-200);
         border-radius: var(--radius-email);
         border: none;
+        cursor: pointer;
+
+        &:hover {
+            background: var(--color-gradient);
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 3px var(--color-red);
+        }
+
+        &:active {
+            background: var(--color-gradient);
+        }
     }
 }
 
@@ -307,7 +345,7 @@ main {
         min-height: 41.0625rem;
         padding: var(--padding-card-desktop);
         width: unset;
-        display: none;
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
         gap: var(--spacing-800);
@@ -352,7 +390,7 @@ main {
 
     /* Success message start */
     .container-success {
-        display: flex;
+        display: none;
         gap: 0;
     }
 }
