@@ -303,32 +303,50 @@ main {
 
     /* Sign-up form start */
     .container-sign-up {
-        max-width: unset;
-        min-height: unset;
+        max-width: 56.5rem;
+        min-height: 41.0625rem;
+        padding: var(--padding-card-desktop);
         width: unset;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
         gap: var(--spacing-800);
+        border-radius: var(--radius-card-tablet);
 
         picture {
             grid-column: 2 / 3;
+
+            .illustration {
+                max-width: unset;
+            }
         }
     }
 
     .container-main {
-        min-height: 28.125rem;
+        max-width: 23.5rem;
         grid-row: 1 / 2;
+        gap: var(--spacing-400);
 
         .sign-up-form {
 
+
             .form-input {
-                padding: var(--spacing-200) var(--spacing-900);
+                height: 3.5rem;
+                padding: var(--spacing-200) var(--spacing-300);
             }
 
             .sign-up-button {
-                padding: var(--spacing-200) var(--spacing-900);
+                padding: var(--spacing-200) var(--spacing-500);
             }
+        }
+    }
+
+
+    .container-content {
+        gap: var(--spacing-400);
+
+        .container-title {
+            gap: var(--spacing-400);
         }
     }
 }
