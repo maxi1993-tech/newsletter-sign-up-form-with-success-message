@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [https://maxi1993-tech.github.io/newsletter-sign-up-form-with-success-message/](https://maxi1993-tech.github.io/newsletter-sign-up-form-with-success-message/)
-- Solution URL: Add after submission
+- Solution URL: [https://www.frontendmentor.io/solutions/newsletter-sign-up-form-with-scss-js-mobile-first-ggYdjX-FUw](https://www.frontendmentor.io/solutions/newsletter-sign-up-form-with-scss-js-mobile-first-ggYdjX-FUw)
 
 ## My process
 
