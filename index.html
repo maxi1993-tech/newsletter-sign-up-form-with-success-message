@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <script src="src/js/script.js" defer></script>
 </head>
 
 <body>
@@ -39,11 +40,14 @@
         </div>
         <form class="sign-up-form" action="#" method="post">
 
-          <label class="form-label" for="email">Email address
+          <label class="form-label" for="email">
+            <div class="form-label-header">
+              <span>Email address</span>
+              <span id="email-error" aria-live="polite">Valid email required</span>
+            </div>
             <input class="form-input" type="email" autocomplete="email" name="email" id="email" required
               placeholder="email@company.com" aria-describedby="email-error">
           </label>
-          <span id="email-error" aria-live="polite">Valid email required</span>
           <button class="sign-up-button" type="submit">Subscribe to monthly newsletter</button>
 
         </form>
@@ -51,11 +55,12 @@
     </div>
 
     <!-- Success message start -->
-    <div class="container-success" aria-hidden="true">
+    <div class="container-success hidden" aria-hidden="true">
       <div class="container-success-content">
         <img class="svg-success" src="./assets/images/icon-success.svg" alt="">
         <h2 class="title-success">Thanks for subscribing!</h2>
-        <p class="paragraph-success">A confirmation email has been sent to <span class="email-bold">ash@loremcompany.com</span>.
+        <p class="paragraph-success">A confirmation email has been sent to <span
+            class="email-bold">ash@loremcompany.com</span>.
           Please open it and click the button inside to confirm your subscription.</p>
       </div>
       <button class="success-button" type="button">Dismiss message</button>

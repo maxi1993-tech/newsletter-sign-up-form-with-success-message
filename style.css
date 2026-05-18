@@ -97,6 +97,10 @@ select {
   font: inherit;
 }
 
+.hidden {
+  display: none !important;
+}
+
 main {
   height: 100vh;
   display: flex;
@@ -135,6 +139,14 @@ main {
   flex-direction: column;
   gap: var(--spacing-100);
 }
+.sign-up-form .form-label .form-label-header {
+  display: flex;
+  justify-content: space-between;
+}
+.sign-up-form .form-label #email-error {
+  color: var(--color-red);
+  font-size: var(--fs-preset-3);
+}
 .sign-up-form .form-label .form-input {
   font-size: var(--fs-preset-2);
   font-weight: var(--fw-regular);
@@ -146,10 +158,6 @@ main {
   background-color: var(--color-red-100);
   color: var(--color-red);
   border: 1px solid var(--color-red);
-}
-.sign-up-form .form-label .form-input--error + #email-error {
-  color: var(--color-red);
-  display: block;
 }
 .sign-up-form #email-error {
   display: none;
@@ -209,7 +217,7 @@ main {
 .container-success {
   max-width: 20.4375rem;
   min-height: 38.9375rem;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -284,7 +292,7 @@ main {
   }
   /* Success message start */
   .container-success {
-    display: none;
+    display: flex;
     max-width: 31.5rem;
     min-height: 32.5rem;
     background-color: var(--color-white);
@@ -333,7 +341,7 @@ main {
   }
   /* Success message start */
   .container-success {
-    display: none;
+    display: flex;
     gap: 0;
   }
 }
